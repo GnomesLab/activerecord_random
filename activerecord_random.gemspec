@@ -17,9 +17,9 @@ Gem::Specification.new do |s|
 
   s.add_dependency('activerecord', '~> 3.0.1')
 
-  s.add_development_dependency 'mysql', '~> 2.8.0'
+  s.add_development_dependency 'mysql2', '~> 2.0'
   s.add_development_dependency 'ruby-debug19', '~> 0.11.0'
-  s.add_development_dependency 'rspec', '~> 2.0.0'
+  s.add_development_dependency 'rspec', '~> 2.0'
   s.add_development_dependency 'factory_girl_rails', '~> 1.0.0'
   s.add_development_dependency 'database_cleaner', '~> 0.6.0'
 

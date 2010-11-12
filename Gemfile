@@ -3,7 +3,6 @@ source 'http://rubygems.org'
 gem 'activerecord', '~> 3.0.1'
 
 group :development, :test do
-  gem 'thor', '~> 0.14'
   gem 'mysql2', '~> 0.2'
 
   if RUBY_VERSION =~ /1\.9\.\d/
