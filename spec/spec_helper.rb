@@ -49,6 +49,9 @@ begin
   if File.exists?(database_yml_file)
     active_record_configuration = YAML.load_file(database_yml_file)['test']
     ActiveRecord::Base.establish_connection(active_record_configuration)
+
+    File.truncate(File.join(File.dirname(__FILE__), 'log', 'test.log'), 0)
+
     ActiveRecord::Base.logger = Logger.new(File.join(File.dirname(__FILE__), 'log', 'test.log'))
 
     ActiveRecord::Base.silence do
