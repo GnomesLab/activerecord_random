@@ -1,6 +1,6 @@
 module ActiveRecord
 
-  module Random
+  module Random #:nodoc:
 
     # ActiveRecord::Base.random returns a random instance of self.
     #
@@ -17,3 +17,5 @@ module ActiveRecord
   end # Random
 
 end # ActiveRecord
+
+ActiveRecord::Base.send :extend, ActiveRecord::Random

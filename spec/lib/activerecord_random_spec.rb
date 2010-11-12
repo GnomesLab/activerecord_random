@@ -15,4 +15,17 @@ describe ActiveRecord::Random do
 
   end # Class Methods
 
+  describe "Random finder" do
+
+    it "Question.find(:random) returns a random instance of Question" do
+      10.times { |n| Factory.create(:question) }
+      Question.find(:random).should be_an_instance_of Question
+    end
+
+    it "also returns nil when no records are found by the random finder" do
+      Question.find(:random).should be_nil
+    end
+
+  end # Random finder
+
 end # ActiveRecord::Random
