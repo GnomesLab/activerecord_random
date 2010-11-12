@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
 
   s.name        = 'activerecord_random'
-  s.version     = '1.0.0.alpha'
+  s.version     = '1.0.0.beta'
   s.summary     = 'Returns a random instance of an ActiveRecord Model'
 
   s.authors     = ['Gnomeslab, Lda.']
