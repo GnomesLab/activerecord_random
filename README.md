@@ -34,7 +34,7 @@ Copyright (c) 2010 Gnomeslab, Lda., released under the MIT license. For more inf
 
 ## Feedback, issues and contributions
 
-If you have an issue with ArchiveTree please create a ticket in our [issue tracker](http://gnomeslab.lighthouseapp.com/projects/63976-activerecord_random/overview).
+If you have an issue with this Gem please create a ticket in our [issue tracker](http://gnomeslab.lighthouseapp.com/projects/63976-activerecord_random/overview).
 
 Feel free to fork this project at any time and submit your changes (along with their respective tests).
 
