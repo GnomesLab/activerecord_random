@@ -4,7 +4,10 @@ ActiveRecord Random is a Ruby Gem that empowers your ActiveRecord Models with th
 
 ## Compatibility
 
-Developed to be compatible with Rails 3.0.x, running on Ruby 1.9.2.
+Developed to be compatible with
+
+* **Rails:** v3.0.x
+* **Ruby:** v1.8.7, v1.9.1 or v1.9.2
 
 ## Installation
 
