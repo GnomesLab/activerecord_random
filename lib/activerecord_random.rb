@@ -1,3 +1,6 @@
+require 'active_record' unless defined? ActiveRecord::Base
+require 'ext/active_record/finder_methods/random'
+
 module ActiveRecord
 
   module Random #:nodoc:
@@ -11,7 +14,11 @@ module ActiveRecord
     #
     # ActiveRecord::Base.random is a safe method, thus when your model's table is empty it will simply return nil.
     def random
-      where("id >= ?", rand(self.count + 1)).first
+      if minimum = self.minimum(:id)
+        where("id >= ?", ::Random.new.rand(minimum..self.maximum(:id))).first
+      else
+        nil
+      end
     end
 
   end # Random

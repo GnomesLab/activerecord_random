@@ -22,7 +22,7 @@ You can install ActiveRecord Random straight from Rubygems. Thanks to Bundler yo
 Scenario: You have a collection of Questions (model name = Question) and you wish to randomly select one of them.
 
 <pre>
-  Question.random #=> random random instance of Question
+  Question.random #=> random instance of Question
 </pre>
 
 Alternatively you can use the :random finder:
