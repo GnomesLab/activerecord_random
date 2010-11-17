@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
 
   s.name        = 'activerecord_random'
-  s.version     = '1.0.0.rc2'
+  s.version     = '1.0.0'
   s.summary     = 'Returns a random instance of an ActiveRecord Model'
 
   s.authors     = ['Gnomeslab, Lda.']
@@ -15,8 +15,9 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = '>= 1.3.7'
 
-  s.add_dependency('activerecord', '~> 3.0.1')
+  s.add_dependency('activerecord', '~> 3.0.0')
 
+  s.add_development_dependency 'fuubar', '~> 0.0'
   s.add_development_dependency 'mysql2', '~> 2.0'
   s.add_development_dependency 'ruby-debug19', '~> 0.11.0'
   s.add_development_dependency 'rspec', '~> 2.0'
