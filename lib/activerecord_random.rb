@@ -1,5 +1,4 @@
 require 'active_record' unless defined? ActiveRecord::Base
-require 'ext/active_record/finder_methods/random'
 
 module ActiveRecord
 
