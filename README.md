@@ -1,3 +1,5 @@
+This fork includes minor tweaks for the latest Rails 3.1 & Ruby 1.9
+
 ## Introduction
 
 ActiveRecord Random is a Ruby Gem that empowers your ActiveRecord Models with the ability to return a random record without using SQL RAND().
@@ -6,7 +8,7 @@ ActiveRecord Random is a Ruby Gem that empowers your ActiveRecord Models with th
 
 Developed to be compatible with
 
-* **Rails:** v3.0.x
+* **Rails:** v3.0.x or v3.1.x
 * **Ruby:** v1.8.7, v1.9.1 or v1.9.2
 
 ## Installation
