@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = '>= 1.3.7'
 
-  s.add_dependency('activerecord', '~> 3.0.0')
+  s.add_dependency('activerecord', '~> 3.0')
 
   s.add_development_dependency 'fuubar', '~> 0.0'
   s.add_development_dependency 'mysql2', '~> 2.0'
@@ -24,6 +24,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'factory_girl_rails', '~> 1.0.0'
   s.add_development_dependency 'database_cleaner', '~> 0.6.0'
 
-  s.files = FileList['lib/**/*.rb', '[A-Z]*', 'spec/**/*.rb'].to_a
+  s.files = Dir.glob(['lib/**/*.rb', '[A-Z]*', 'spec/**/*.rb']).to_a
   s.require_paths << 'lib'
 end
